@@ -16,7 +16,7 @@ namespace CPTGameV._1_BenM_
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmCPTGame());
+            Application.Run(new frmSplashScreen());
         }
     }
 }

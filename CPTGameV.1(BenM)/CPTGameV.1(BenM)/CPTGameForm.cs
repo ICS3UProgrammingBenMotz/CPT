@@ -8,11 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using WMPLib;
 
 namespace CPTGameV._1_BenM_
 {
+    
+
     public partial class frmCPTGame : Form
     {
+        //creates media player
+        WindowsMediaPlayer L1Music = new WindowsMediaPlayer();
+
+        WindowsMediaPlayer CaChing = new WindowsMediaPlayer();
+
         //controls player going left
         bool goLeft = false;
 
@@ -42,12 +50,15 @@ namespace CPTGameV._1_BenM_
 
         
        
-        public frmCPTGame()
+        public frmCPTGame(Image picUserChoice)
         {
             InitializeComponent();
 
-            
-            
+            picPlayer.Image = picUserChoice;
+
+            L1Music.URL = "Chcken.mp3";
+
+            CaChing.URL = "CaChing.mp3";
         }
 
         private void picBackground_Click(object sender, EventArgs e)
@@ -101,16 +112,16 @@ namespace CPTGameV._1_BenM_
             //stops the player on the right of the form
 
             //moves backround
-            if (goRight && background.Left > -1353)
+            if (goRight && background.Left > -1280)
             {
-                //background.Left -= backLeft;
+                background.Left -= backLeft;
 
                 //this loop checks coins and platoforms in the level
                 //when they are found, it'll move to the left
                 foreach (Control x in this.Controls)
                 {
                     if (x is PictureBox && (string)x.Tag == "platform"|| x is PictureBox && (string)x.Tag =="coin" || x is PictureBox && (string)x.Tag =="door"
-                        || x is PictureBox && (string)x.Tag == "key")
+                        || x is PictureBox && (string)x.Tag == "key" || x is PictureBox && (string)x.Tag == "spike")
                     {
                         x.Left -= backLeft;
                     }
@@ -119,21 +130,25 @@ namespace CPTGameV._1_BenM_
 
             if (goLeft && background.Left < 2)
             {
-               //background.Left += backLeft;
+               background.Left += backLeft;
 
                 foreach (Control x in this.Controls)
                 {
                     if (x is PictureBox && (string)x.Tag == "platform" || x is PictureBox && (string)x.Tag == "coin" || x is PictureBox && (string)x.Tag == "door"
-                        || x is PictureBox && (string)x.Tag == "key")
+                        || x is PictureBox && (string)x.Tag == "key" || x is PictureBox && (string) x.Tag=="spike")
                     {
                         x.Left+= backLeft;
                     }
+
+
                 }
             }
 
             //checks for all controls in the form
            foreach (Control x in this.Controls)
            {
+
+
                 //if x is a picbox and has a tag of platform
                 if ( x is PictureBox && (string)x.Tag =="platform")
                 {
@@ -153,10 +168,27 @@ namespace CPTGameV._1_BenM_
                         {
                             this.Controls.Remove(x);
                             score++;
+                            
+                        //plays CaChing sound effect when coins are picked up
+                            CaChing.controls.play();
+
                         }           
                 }
+                //If the player hits a spike
+                if (x is PictureBox && (string)x.Tag == "spike")
+                {
+                    if (picPlayer.Bounds.IntersectsWith(x.Bounds))
+                    {
+                        tmrGameTimer.Stop();
+                        picPlayer.Hide();
+                        MessageBox.Show("You Died!");
+                        
+                    }
+                }
+
             }
 
+           //If player hits the door
             if (picPlayer.Bounds.IntersectsWith(picDoor.Bounds)&&hasKey)
             {
                 picDoor.Image = Properties.Resources.door_open;
@@ -177,7 +209,8 @@ namespace CPTGameV._1_BenM_
             {
                 tmrGameTimer.Stop();
                 MessageBox.Show("You Died!");
-            }         
+            }   
+           
 
         }
         
@@ -251,6 +284,17 @@ namespace CPTGameV._1_BenM_
         }
 
         private void picPlayer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmCPTGame_Load(object sender, EventArgs e)
+        {
+            //plays music
+            L1Music.controls.play();
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
         }

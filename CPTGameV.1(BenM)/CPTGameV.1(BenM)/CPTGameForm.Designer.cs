@@ -56,6 +56,9 @@
             this.picDoor = new System.Windows.Forms.PictureBox();
             this.picPlatform1 = new System.Windows.Forms.PictureBox();
             this.background = new System.Windows.Forms.PictureBox();
+            this.picSpike2 = new System.Windows.Forms.PictureBox();
+            this.picSpike3 = new System.Windows.Forms.PictureBox();
+            this.picSpike1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picKey)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCoin20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCoin18)).BeginInit();
@@ -82,12 +85,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.picDoor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPlatform1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.background)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSpike2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSpike3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSpike1)).BeginInit();
             this.SuspendLayout();
             // 
             // tmrGameTimer
             // 
             this.tmrGameTimer.Enabled = true;
-            this.tmrGameTimer.Interval = 20;
+            this.tmrGameTimer.Interval = 1;
             this.tmrGameTimer.Tick += new System.EventHandler(this.mainGameTimer);
             // 
             // picKey
@@ -402,12 +408,52 @@
             this.background.TabStop = false;
             this.background.Click += new System.EventHandler(this.picBackground_Click);
             // 
+            // picSpike2
+            // 
+            this.picSpike2.BackColor = System.Drawing.Color.Transparent;
+            this.picSpike2.Image = global::CPTGameV._1_BenM_.Properties.Resources.spikes_png_1;
+            this.picSpike2.Location = new System.Drawing.Point(426, 405);
+            this.picSpike2.Name = "picSpike2";
+            this.picSpike2.Size = new System.Drawing.Size(100, 28);
+            this.picSpike2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picSpike2.TabIndex = 41;
+            this.picSpike2.TabStop = false;
+            this.picSpike2.Tag = "spike";
+            // 
+            // picSpike3
+            // 
+            this.picSpike3.BackColor = System.Drawing.Color.Transparent;
+            this.picSpike3.Image = global::CPTGameV._1_BenM_.Properties.Resources.spikes_png_1;
+            this.picSpike3.Location = new System.Drawing.Point(947, 210);
+            this.picSpike3.Name = "picSpike3";
+            this.picSpike3.Size = new System.Drawing.Size(100, 50);
+            this.picSpike3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picSpike3.TabIndex = 42;
+            this.picSpike3.TabStop = false;
+            this.picSpike3.Tag = "spike";
+            // 
+            // picSpike1
+            // 
+            this.picSpike1.BackColor = System.Drawing.Color.Transparent;
+            this.picSpike1.Image = global::CPTGameV._1_BenM_.Properties.Resources.spikes_png_1;
+            this.picSpike1.Location = new System.Drawing.Point(12, 405);
+            this.picSpike1.Name = "picSpike1";
+            this.picSpike1.Size = new System.Drawing.Size(100, 28);
+            this.picSpike1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picSpike1.TabIndex = 43;
+            this.picSpike1.TabStop = false;
+            this.picSpike1.Tag = "spike";
+            // 
             // frmCPTGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
-            this.ClientSize = new System.Drawing.Size(622, 463);
+            this.BackgroundImage = global::CPTGameV._1_BenM_.Properties.Resources.desertbackground;
+            this.ClientSize = new System.Drawing.Size(646, 463);
+            this.Controls.Add(this.picSpike1);
+            this.Controls.Add(this.picSpike3);
+            this.Controls.Add(this.picSpike2);
             this.Controls.Add(this.picKey);
             this.Controls.Add(this.picCoin20);
             this.Controls.Add(this.picCoin18);
@@ -434,8 +480,11 @@
             this.Controls.Add(this.picDoor);
             this.Controls.Add(this.picPlatform1);
             this.Controls.Add(this.background);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "frmCPTGame";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CPT Game";
+            this.Load += new System.EventHandler(this.frmCPTGame_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyIsDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.keyIsUp);
             ((System.ComponentModel.ISupportInitialize)(this.picKey)).EndInit();
@@ -464,6 +513,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.picDoor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPlatform1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.background)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSpike2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSpike3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSpike1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -497,6 +549,9 @@
         private System.Windows.Forms.PictureBox picCoin20;
         private System.Windows.Forms.PictureBox picKey;
         private System.Windows.Forms.Timer tmrGameTimer;
+        private System.Windows.Forms.PictureBox picSpike2;
+        private System.Windows.Forms.PictureBox picSpike3;
+        private System.Windows.Forms.PictureBox picSpike1;
     }
 }
 

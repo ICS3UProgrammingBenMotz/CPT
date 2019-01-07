@@ -7,3 +7,22 @@ N:\StuShare\Semester 1 - Fall 2018\ICS3U Programming\Motz, Benjamin (s244734)\CP
 N:\StuShare\Semester 1 - Fall 2018\ICS3U Programming\Motz, Benjamin (s244734)\CPT\CPTGameV.1(BenM)\CPTGameV.1(BenM)\obj\Debug\CPTGameV.1(BenM).csproj.GenerateResource.Cache
 N:\StuShare\Semester 1 - Fall 2018\ICS3U Programming\Motz, Benjamin (s244734)\CPT\CPTGameV.1(BenM)\CPTGameV.1(BenM)\obj\Debug\CPTGameV.1(BenM).exe
 N:\StuShare\Semester 1 - Fall 2018\ICS3U Programming\Motz, Benjamin (s244734)\CPT\CPTGameV.1(BenM)\CPTGameV.1(BenM)\obj\Debug\CPTGameV.1(BenM).pdb
+C:\Users\Motz\Documents\GitHub\CPT\CPTGameV.1(BenM)\CPTGameV.1(BenM)\bin\Debug\CPTGameV.1(BenM).exe.config
+C:\Users\Motz\Documents\GitHub\CPT\CPTGameV.1(BenM)\CPTGameV.1(BenM)\bin\Debug\CPTGameV.1(BenM).exe
+C:\Users\Motz\Documents\GitHub\CPT\CPTGameV.1(BenM)\CPTGameV.1(BenM)\bin\Debug\CPTGameV.1(BenM).pdb
+C:\Users\Motz\Documents\GitHub\CPT\CPTGameV.1(BenM)\CPTGameV.1(BenM)\obj\Debug\CPTGameV.1(BenM).csprojAssemblyReference.cache
+C:\Users\Motz\Documents\GitHub\CPT\CPTGameV.1(BenM)\CPTGameV.1(BenM)\obj\Debug\CPTGameV._1_BenM_.frmCPTGame.resources
+C:\Users\Motz\Documents\GitHub\CPT\CPTGameV.1(BenM)\CPTGameV.1(BenM)\obj\Debug\CPTGameV._1_BenM_.Properties.Resources.resources
+C:\Users\Motz\Documents\GitHub\CPT\CPTGameV.1(BenM)\CPTGameV.1(BenM)\obj\Debug\CPTGameV.1(BenM).csproj.GenerateResource.cache
+C:\Users\Motz\Documents\GitHub\CPT\CPTGameV.1(BenM)\CPTGameV.1(BenM)\obj\Debug\CPTGameV.1(BenM).csproj.CoreCompileInputs.cache
+C:\Users\Motz\Documents\GitHub\CPT\CPTGameV.1(BenM)\CPTGameV.1(BenM)\obj\Debug\CPTGameV.1(BenM).exe
+C:\Users\Motz\Documents\GitHub\CPT\CPTGameV.1(BenM)\CPTGameV.1(BenM)\obj\Debug\CPTGameV.1(BenM).pdb
+C:\Users\Motz\Documents\GitHub\CPT\CPTGameV.1(BenM)\CPTGameV.1(BenM)\obj\Debug\CPTGameV._1_BenM_.frmSplashScreen.resources
+C:\Users\Motz\Documents\GitHub\CPT\CPTGameV.1(BenM)\CPTGameV.1(BenM)\obj\Debug\CPTGameV._1_BenM_.frmHelp.resources
+C:\Users\Motz\Documents\GitHub\CPT\CPTGameV.1(BenM)\CPTGameV.1(BenM)\obj\Debug\CPTGameV._1_BenM_.frmMainMenu.resources
+C:\Users\Motz\Documents\GitHub\CPT\CPTGameV.1(BenM)\CPTGameV.1(BenM)\bin\Debug\Interop.WMPLib.dll
+C:\Users\Motz\Documents\GitHub\CPT\CPTGameV.1(BenM)\CPTGameV.1(BenM)\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\Motz\Documents\GitHub\CPT\CPTGameV.1(BenM)\CPTGameV.1(BenM)\obj\Debug\Interop.WMPLib.dll
+C:\Users\Motz\Documents\GitHub\CPT\CPTGameV.1(BenM)\CPTGameV.1(BenM)\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\Motz\Documents\GitHub\CPT\CPTGameV.1(BenM)\CPTGameV.1(BenM)\obj\Debug\CPTGameV.1(BenM).csproj.ResolveComReference.cache
+C:\Users\Motz\Documents\GitHub\CPT\CPTGameV.1(BenM)\CPTGameV.1(BenM)\obj\Debug\CPTGameV._1_BenM_.frmChooseChar.resources
