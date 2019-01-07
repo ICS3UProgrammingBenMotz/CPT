@@ -227,5 +227,20 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sandPlatform.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\egyptianGuy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gladiator-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoldKey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diamond.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -64,11 +64,11 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::CPTGameV._1_BenM_.Properties.Resources.player;
-            this.pictureBox2.Location = new System.Drawing.Point(263, 261);
+            this.pictureBox2.Image = global::CPTGameV._1_BenM_.Properties.Resources.gladiator_5;
+            this.pictureBox2.Location = new System.Drawing.Point(263, 268);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(87, 108);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.Size = new System.Drawing.Size(87, 101);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
@@ -98,6 +98,7 @@
             this.Controls.Add(this.picComandoGuy);
             this.Name = "frmChooseChar";
             this.Text = "Choose your character";
+            this.Load += new System.EventHandler(this.frmChooseChar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picComandoGuy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

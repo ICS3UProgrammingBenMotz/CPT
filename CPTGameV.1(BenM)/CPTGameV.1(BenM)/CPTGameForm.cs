@@ -47,7 +47,6 @@ namespace CPTGameV._1_BenM_
 
         //sets backround mocing speed
         int backLeft = 10;
-
         
        
         public frmCPTGame(Image picUserChoice)
@@ -121,7 +120,7 @@ namespace CPTGameV._1_BenM_
                 foreach (Control x in this.Controls)
                 {
                     if (x is PictureBox && (string)x.Tag == "platform"|| x is PictureBox && (string)x.Tag =="coin" || x is PictureBox && (string)x.Tag =="door"
-                        || x is PictureBox && (string)x.Tag == "key" || x is PictureBox && (string)x.Tag == "spike")
+                        || x is PictureBox && (string)x.Tag == "key" || x is PictureBox && (string)x.Tag == "spike" || x is PictureBox && (string)x.Tag == "diamond")
                     {
                         x.Left -= backLeft;
                     }
@@ -135,7 +134,7 @@ namespace CPTGameV._1_BenM_
                 foreach (Control x in this.Controls)
                 {
                     if (x is PictureBox && (string)x.Tag == "platform" || x is PictureBox && (string)x.Tag == "coin" || x is PictureBox && (string)x.Tag == "door"
-                        || x is PictureBox && (string)x.Tag == "key" || x is PictureBox && (string) x.Tag=="spike")
+                        || x is PictureBox && (string)x.Tag == "key" || x is PictureBox && (string) x.Tag=="spike" || x is PictureBox && (string) x.Tag=="diamond" )
                     {
                         x.Left+= backLeft;
                     }
@@ -166,10 +165,16 @@ namespace CPTGameV._1_BenM_
                         //if player collides with the coin
                         if (picPlayer.Bounds.IntersectsWith(x.Bounds))
                         {
+                            //removes coin
                             this.Controls.Remove(x);
+
+                            //increments score
                             score++;
-                            
-                        //plays CaChing sound effect when coins are picked up
+
+                            //updates score
+                            lblScore.Text = "Score = " + score;
+
+                            //plays CaChing sound effect when coins are picked up
                             CaChing.controls.play();
 
                         }           
@@ -182,6 +187,15 @@ namespace CPTGameV._1_BenM_
                         tmrGameTimer.Stop();
                         picPlayer.Hide();
                         MessageBox.Show("You Died!");
+                        
+                    }
+                }
+                //if player pics up diamond
+                if (x is PictureBox && (string)x.Tag == "diamond")
+                {
+                    if (picPlayer.Bounds.IntersectsWith(x.Bounds))
+                    {
+                        this.Controls.Remove(x);
                         
                     }
                 }

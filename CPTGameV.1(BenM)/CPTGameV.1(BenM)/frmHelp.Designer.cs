@@ -37,9 +37,12 @@
             this.picKey = new System.Windows.Forms.PictureBox();
             this.lblKeys = new System.Windows.Forms.Label();
             this.btnGoHome = new System.Windows.Forms.Button();
+            this.picDiamond = new System.Windows.Forms.PictureBox();
+            this.lblPowerUps = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picCash)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSpikes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picKey)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDiamond)).BeginInit();
             this.SuspendLayout();
             // 
             // lblArrowKeys
@@ -68,7 +71,7 @@
             // 
             this.picCash.BackColor = System.Drawing.Color.Transparent;
             this.picCash.Image = global::CPTGameV._1_BenM_.Properties.Resources.cash;
-            this.picCash.Location = new System.Drawing.Point(57, 186);
+            this.picCash.Location = new System.Drawing.Point(57, 200);
             this.picCash.Name = "picCash";
             this.picCash.Size = new System.Drawing.Size(100, 50);
             this.picCash.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -80,7 +83,7 @@
             this.lblCash.AutoSize = true;
             this.lblCash.BackColor = System.Drawing.Color.Transparent;
             this.lblCash.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCash.Location = new System.Drawing.Point(182, 200);
+            this.lblCash.Location = new System.Drawing.Point(182, 213);
             this.lblCash.Name = "lblCash";
             this.lblCash.Size = new System.Drawing.Size(267, 25);
             this.lblCash.TabIndex = 3;
@@ -111,7 +114,7 @@
             // picKey
             // 
             this.picKey.BackColor = System.Drawing.Color.Transparent;
-            this.picKey.Image = global::CPTGameV._1_BenM_.Properties.Resources.Small_Mario_NSMBU;
+            this.picKey.Image = global::CPTGameV._1_BenM_.Properties.Resources.GoldKey;
             this.picKey.Location = new System.Drawing.Point(57, 340);
             this.picKey.Name = "picKey";
             this.picKey.Size = new System.Drawing.Size(100, 50);
@@ -129,6 +132,7 @@
             this.lblKeys.Size = new System.Drawing.Size(389, 25);
             this.lblKeys.TabIndex = 7;
             this.lblKeys.Text = "Collect the keys to get to the next level!";
+            this.lblKeys.Click += new System.EventHandler(this.lblKeys_Click);
             // 
             // btnGoHome
             // 
@@ -141,6 +145,28 @@
             this.btnGoHome.UseVisualStyleBackColor = true;
             this.btnGoHome.Click += new System.EventHandler(this.btnGoHome_Click);
             // 
+            // picDiamond
+            // 
+            this.picDiamond.BackColor = System.Drawing.Color.Transparent;
+            this.picDiamond.Image = global::CPTGameV._1_BenM_.Properties.Resources.diamond;
+            this.picDiamond.Location = new System.Drawing.Point(57, 144);
+            this.picDiamond.Name = "picDiamond";
+            this.picDiamond.Size = new System.Drawing.Size(100, 50);
+            this.picDiamond.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picDiamond.TabIndex = 9;
+            this.picDiamond.TabStop = false;
+            // 
+            // lblPowerUps
+            // 
+            this.lblPowerUps.AutoSize = true;
+            this.lblPowerUps.BackColor = System.Drawing.Color.Transparent;
+            this.lblPowerUps.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPowerUps.Location = new System.Drawing.Point(182, 156);
+            this.lblPowerUps.Name = "lblPowerUps";
+            this.lblPowerUps.Size = new System.Drawing.Size(378, 25);
+            this.lblPowerUps.TabIndex = 10;
+            this.lblPowerUps.Text = "Collect the diamonds to get power ups";
+            // 
             // frmHelp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -148,6 +174,8 @@
             this.BackgroundImage = global::CPTGameV._1_BenM_.Properties.Resources.MenuBackground1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(630, 424);
+            this.Controls.Add(this.lblPowerUps);
+            this.Controls.Add(this.picDiamond);
             this.Controls.Add(this.btnGoHome);
             this.Controls.Add(this.lblKeys);
             this.Controls.Add(this.picKey);
@@ -164,6 +192,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picCash)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSpikes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picKey)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDiamond)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -180,5 +209,7 @@
         private System.Windows.Forms.PictureBox picKey;
         private System.Windows.Forms.Label lblKeys;
         private System.Windows.Forms.Button btnGoHome;
+        private System.Windows.Forms.PictureBox picDiamond;
+        private System.Windows.Forms.Label lblPowerUps;
     }
 }

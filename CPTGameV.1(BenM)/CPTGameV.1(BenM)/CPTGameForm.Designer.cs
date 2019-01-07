@@ -59,6 +59,8 @@
             this.picSpike2 = new System.Windows.Forms.PictureBox();
             this.picSpike3 = new System.Windows.Forms.PictureBox();
             this.picSpike1 = new System.Windows.Forms.PictureBox();
+            this.picDiamond1 = new System.Windows.Forms.PictureBox();
+            this.lblScore = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picKey)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCoin20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCoin18)).BeginInit();
@@ -88,6 +90,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picSpike2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSpike3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSpike1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDiamond1)).BeginInit();
             this.SuspendLayout();
             // 
             // tmrGameTimer
@@ -98,7 +101,8 @@
             // 
             // picKey
             // 
-            this.picKey.Image = global::CPTGameV._1_BenM_.Properties.Resources.key;
+            this.picKey.BackColor = System.Drawing.Color.Transparent;
+            this.picKey.Image = global::CPTGameV._1_BenM_.Properties.Resources.GoldKey;
             this.picKey.Location = new System.Drawing.Point(1536, 360);
             this.picKey.Name = "picKey";
             this.picKey.Size = new System.Drawing.Size(50, 30);
@@ -218,7 +222,7 @@
             // picPlatform12
             // 
             this.picPlatform12.BackColor = System.Drawing.Color.Transparent;
-            this.picPlatform12.Image = global::CPTGameV._1_BenM_.Properties.Resources.grassplatform1;
+            this.picPlatform12.Image = global::CPTGameV._1_BenM_.Properties.Resources.sandPlatform;
             this.picPlatform12.Location = new System.Drawing.Point(1536, 132);
             this.picPlatform12.Name = "picPlatform12";
             this.picPlatform12.Size = new System.Drawing.Size(149, 62);
@@ -230,7 +234,7 @@
             // picPlatform11
             // 
             this.picPlatform11.BackColor = System.Drawing.Color.Transparent;
-            this.picPlatform11.Image = global::CPTGameV._1_BenM_.Properties.Resources.grassplatform1;
+            this.picPlatform11.Image = global::CPTGameV._1_BenM_.Properties.Resources.sandPlatform;
             this.picPlatform11.Location = new System.Drawing.Point(1485, 393);
             this.picPlatform11.Name = "picPlatform11";
             this.picPlatform11.Size = new System.Drawing.Size(149, 62);
@@ -242,7 +246,7 @@
             // picPlatform10
             // 
             this.picPlatform10.BackColor = System.Drawing.Color.Transparent;
-            this.picPlatform10.Image = global::CPTGameV._1_BenM_.Properties.Resources.grassplatform1;
+            this.picPlatform10.Image = global::CPTGameV._1_BenM_.Properties.Resources.sandPlatform;
             this.picPlatform10.Location = new System.Drawing.Point(1304, 305);
             this.picPlatform10.Name = "picPlatform10";
             this.picPlatform10.Size = new System.Drawing.Size(118, 62);
@@ -254,7 +258,7 @@
             // picPlatform9
             // 
             this.picPlatform9.BackColor = System.Drawing.Color.Transparent;
-            this.picPlatform9.Image = global::CPTGameV._1_BenM_.Properties.Resources.grassplatform1;
+            this.picPlatform9.Image = global::CPTGameV._1_BenM_.Properties.Resources.sandPlatform;
             this.picPlatform9.Location = new System.Drawing.Point(1140, 132);
             this.picPlatform9.Name = "picPlatform9";
             this.picPlatform9.Size = new System.Drawing.Size(125, 45);
@@ -266,7 +270,7 @@
             // picPlatform6
             // 
             this.picPlatform6.BackColor = System.Drawing.Color.Transparent;
-            this.picPlatform6.Image = global::CPTGameV._1_BenM_.Properties.Resources.grassplatform1;
+            this.picPlatform6.Image = global::CPTGameV._1_BenM_.Properties.Resources.sandPlatform;
             this.picPlatform6.Location = new System.Drawing.Point(764, 86);
             this.picPlatform6.Name = "picPlatform6";
             this.picPlatform6.Size = new System.Drawing.Size(94, 42);
@@ -278,7 +282,7 @@
             // picPlatform8
             // 
             this.picPlatform8.BackColor = System.Drawing.Color.Transparent;
-            this.picPlatform8.Image = global::CPTGameV._1_BenM_.Properties.Resources.grassplatform1;
+            this.picPlatform8.Image = global::CPTGameV._1_BenM_.Properties.Resources.sandPlatform;
             this.picPlatform8.Location = new System.Drawing.Point(929, 254);
             this.picPlatform8.Name = "picPlatform8";
             this.picPlatform8.Size = new System.Drawing.Size(138, 62);
@@ -290,7 +294,7 @@
             // picPlatform7
             // 
             this.picPlatform7.BackColor = System.Drawing.Color.Transparent;
-            this.picPlatform7.Image = global::CPTGameV._1_BenM_.Properties.Resources.grassplatform1;
+            this.picPlatform7.Image = global::CPTGameV._1_BenM_.Properties.Resources.sandPlatform;
             this.picPlatform7.Location = new System.Drawing.Point(764, 360);
             this.picPlatform7.Name = "picPlatform7";
             this.picPlatform7.Size = new System.Drawing.Size(94, 62);
@@ -302,7 +306,7 @@
             // picPlatform35
             // 
             this.picPlatform35.BackColor = System.Drawing.Color.Transparent;
-            this.picPlatform35.Image = global::CPTGameV._1_BenM_.Properties.Resources.grassplatform1;
+            this.picPlatform35.Image = global::CPTGameV._1_BenM_.Properties.Resources.sandPlatform;
             this.picPlatform35.Location = new System.Drawing.Point(622, 210);
             this.picPlatform35.Name = "picPlatform35";
             this.picPlatform35.Size = new System.Drawing.Size(121, 36);
@@ -314,10 +318,10 @@
             // picPlatform4
             // 
             this.picPlatform4.BackColor = System.Drawing.Color.Transparent;
-            this.picPlatform4.Image = global::CPTGameV._1_BenM_.Properties.Resources.grassplatform1;
+            this.picPlatform4.Image = global::CPTGameV._1_BenM_.Properties.Resources.sandPlatform;
             this.picPlatform4.Location = new System.Drawing.Point(260, 226);
             this.picPlatform4.Name = "picPlatform4";
-            this.picPlatform4.Size = new System.Drawing.Size(162, 62);
+            this.picPlatform4.Size = new System.Drawing.Size(148, 45);
             this.picPlatform4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picPlatform4.TabIndex = 12;
             this.picPlatform4.TabStop = false;
@@ -326,7 +330,7 @@
             // picPlatform3
             // 
             this.picPlatform3.BackColor = System.Drawing.Color.Transparent;
-            this.picPlatform3.Image = global::CPTGameV._1_BenM_.Properties.Resources.grassplatform1;
+            this.picPlatform3.Image = global::CPTGameV._1_BenM_.Properties.Resources.sandPlatform;
             this.picPlatform3.Location = new System.Drawing.Point(-3, 107);
             this.picPlatform3.Name = "picPlatform3";
             this.picPlatform3.Size = new System.Drawing.Size(138, 24);
@@ -338,7 +342,7 @@
             // picPlatform2
             // 
             this.picPlatform2.BackColor = System.Drawing.Color.Transparent;
-            this.picPlatform2.Image = global::CPTGameV._1_BenM_.Properties.Resources.grassplatform1;
+            this.picPlatform2.Image = global::CPTGameV._1_BenM_.Properties.Resources.sandPlatform;
             this.picPlatform2.Location = new System.Drawing.Point(-3, 294);
             this.picPlatform2.Name = "picPlatform2";
             this.picPlatform2.Size = new System.Drawing.Size(99, 47);
@@ -375,6 +379,7 @@
             // 
             // picDoor
             // 
+            this.picDoor.BackColor = System.Drawing.Color.Transparent;
             this.picDoor.Image = global::CPTGameV._1_BenM_.Properties.Resources.goldDoor;
             this.picDoor.Location = new System.Drawing.Point(12, 21);
             this.picDoor.Name = "picDoor";
@@ -387,10 +392,10 @@
             // picPlatform1
             // 
             this.picPlatform1.BackColor = System.Drawing.Color.Transparent;
-            this.picPlatform1.Image = global::CPTGameV._1_BenM_.Properties.Resources.grassplatform1;
+            this.picPlatform1.Image = global::CPTGameV._1_BenM_.Properties.Resources.sandPlatform;
             this.picPlatform1.Location = new System.Drawing.Point(-3, 430);
             this.picPlatform1.Name = "picPlatform1";
-            this.picPlatform1.Size = new System.Drawing.Size(551, 62);
+            this.picPlatform1.Size = new System.Drawing.Size(529, 62);
             this.picPlatform1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picPlatform1.TabIndex = 1;
             this.picPlatform1.TabStop = false;
@@ -444,13 +449,38 @@
             this.picSpike1.TabStop = false;
             this.picSpike1.Tag = "spike";
             // 
+            // picDiamond1
+            // 
+            this.picDiamond1.BackColor = System.Drawing.Color.Transparent;
+            this.picDiamond1.Image = global::CPTGameV._1_BenM_.Properties.Resources.diamond;
+            this.picDiamond1.Location = new System.Drawing.Point(1078, 180);
+            this.picDiamond1.Name = "picDiamond1";
+            this.picDiamond1.Size = new System.Drawing.Size(31, 30);
+            this.picDiamond1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picDiamond1.TabIndex = 44;
+            this.picDiamond1.TabStop = false;
+            this.picDiamond1.Tag = "diamond";
+            // 
+            // lblScore
+            // 
+            this.lblScore.AutoSize = true;
+            this.lblScore.BackColor = System.Drawing.Color.Transparent;
+            this.lblScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScore.Location = new System.Drawing.Point(494, 9);
+            this.lblScore.Name = "lblScore";
+            this.lblScore.Size = new System.Drawing.Size(86, 20);
+            this.lblScore.TabIndex = 45;
+            this.lblScore.Text = "Score = 0";
+            // 
             // frmCPTGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
             this.BackgroundImage = global::CPTGameV._1_BenM_.Properties.Resources.desertbackground;
-            this.ClientSize = new System.Drawing.Size(646, 463);
+            this.ClientSize = new System.Drawing.Size(630, 463);
+            this.Controls.Add(this.lblScore);
+            this.Controls.Add(this.picDiamond1);
             this.Controls.Add(this.picSpike1);
             this.Controls.Add(this.picSpike3);
             this.Controls.Add(this.picSpike2);
@@ -516,7 +546,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.picSpike2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSpike3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSpike1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDiamond1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -552,6 +584,8 @@
         private System.Windows.Forms.PictureBox picSpike2;
         private System.Windows.Forms.PictureBox picSpike3;
         private System.Windows.Forms.PictureBox picSpike1;
+        private System.Windows.Forms.PictureBox picDiamond1;
+        private System.Windows.Forms.Label lblScore;
     }
 }
 

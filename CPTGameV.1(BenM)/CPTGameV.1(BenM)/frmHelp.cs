@@ -36,5 +36,10 @@ namespace CPTGameV._1_BenM_
         {
 
         }
+
+        private void lblKeys_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
