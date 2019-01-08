@@ -47,8 +47,22 @@ namespace CPTGameV._1_BenM_
 
         //sets backround mocing speed
         int backLeft = 10;
-        
-       
+
+        int randNumb;
+
+        Random randNumbGen = new Random();
+
+
+
+        public int GenerateNumb()
+        {
+            //rand numbs equals
+            randNumb = randNumbGen.Next(1, 3 + 1);
+
+            //returns randNumb
+            return randNumb;
+        }
+
         public frmCPTGame(Image picUserChoice)
         {
             InitializeComponent();
@@ -146,8 +160,6 @@ namespace CPTGameV._1_BenM_
             //checks for all controls in the form
            foreach (Control x in this.Controls)
            {
-
-
                 //if x is a picbox and has a tag of platform
                 if ( x is PictureBox && (string)x.Tag =="platform")
                 {
@@ -187,6 +199,7 @@ namespace CPTGameV._1_BenM_
                         tmrGameTimer.Stop();
                         picPlayer.Hide();
                         MessageBox.Show("You Died!");
+                        L1Music.controls.stop();
                         
                     }
                 }
@@ -196,7 +209,29 @@ namespace CPTGameV._1_BenM_
                     if (picPlayer.Bounds.IntersectsWith(x.Bounds))
                     {
                         this.Controls.Remove(x);
-                        
+
+                        GenerateNumb();
+
+                        if (randNumb==1)
+                        {
+                            score = score + 100;
+                        }
+                        else if (randNumb==2)
+                        {
+                            jumpSpeed = 20;
+
+                            Thread.Sleep(7500);
+
+                            jumpSpeed = 10;
+                        }
+                        else
+                        {
+                            playSpeed = 20;
+
+                            Thread.Sleep(5000);
+
+                            playSpeed = 10;
+                        }
                     }
                 }
 

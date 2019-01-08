@@ -580,12 +580,12 @@
         private System.Windows.Forms.PictureBox picCoin18;
         private System.Windows.Forms.PictureBox picCoin20;
         private System.Windows.Forms.PictureBox picKey;
-        private System.Windows.Forms.Timer tmrGameTimer;
         private System.Windows.Forms.PictureBox picSpike2;
         private System.Windows.Forms.PictureBox picSpike3;
         private System.Windows.Forms.PictureBox picSpike1;
         private System.Windows.Forms.PictureBox picDiamond1;
         private System.Windows.Forms.Label lblScore;
+        private System.Windows.Forms.Timer tmrGameTimer;
     }
 }
 
