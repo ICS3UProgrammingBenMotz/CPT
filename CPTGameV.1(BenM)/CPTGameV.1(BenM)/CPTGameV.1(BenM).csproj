@@ -76,11 +76,29 @@
     <Compile Include="frmChooseChar.Designer.cs">
       <DependentUpon>frmChooseChar.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDeadScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeadScreen.Designer.cs">
+      <DependentUpon>frmDeadScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmHelp.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmHelp.Designer.cs">
       <DependentUpon>frmHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLvlTwo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLvlTwo.Designer.cs">
+      <DependentUpon>frmLvlTwo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpgrade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpgrade.Designer.cs">
+      <DependentUpon>frmUpgrade.cs</DependentUpon>
     </Compile>
     <Compile Include="MainMenuForm.cs">
       <SubType>Form</SubType>
@@ -101,8 +119,17 @@
     <EmbeddedResource Include="frmChooseChar.resx">
       <DependentUpon>frmChooseChar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDeadScreen.resx">
+      <DependentUpon>frmDeadScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmHelp.resx">
       <DependentUpon>frmHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLvlTwo.resx">
+      <DependentUpon>frmLvlTwo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpgrade.resx">
+      <DependentUpon>frmUpgrade.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenuForm.resx">
       <DependentUpon>MainMenuForm.cs</DependentUpon>
@@ -241,6 +268,51 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\diamond.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upgradeBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upgradeArrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkMark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeadBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tombstone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deadhill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graveyard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plaque.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RIP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redX.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redX1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\betterRedX.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lvl2Background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

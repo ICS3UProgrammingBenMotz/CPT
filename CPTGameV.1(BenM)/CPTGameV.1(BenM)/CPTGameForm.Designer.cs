@@ -61,6 +61,7 @@
             this.picSpike1 = new System.Windows.Forms.PictureBox();
             this.picDiamond1 = new System.Windows.Forms.PictureBox();
             this.lblScore = new System.Windows.Forms.Label();
+            this.lblLives = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picKey)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCoin20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCoin18)).BeginInit();
@@ -472,6 +473,17 @@
             this.lblScore.TabIndex = 45;
             this.lblScore.Text = "Score = 0";
             // 
+            // lblLives
+            // 
+            this.lblLives.AutoSize = true;
+            this.lblLives.BackColor = System.Drawing.Color.Transparent;
+            this.lblLives.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLives.Location = new System.Drawing.Point(374, 9);
+            this.lblLives.Name = "lblLives";
+            this.lblLives.Size = new System.Drawing.Size(80, 20);
+            this.lblLives.TabIndex = 46;
+            this.lblLives.Text = "Lives = 1";
+            // 
             // frmCPTGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -479,6 +491,7 @@
             this.BackColor = System.Drawing.Color.Cornsilk;
             this.BackgroundImage = global::CPTGameV._1_BenM_.Properties.Resources.desertbackground;
             this.ClientSize = new System.Drawing.Size(630, 463);
+            this.Controls.Add(this.lblLives);
             this.Controls.Add(this.lblScore);
             this.Controls.Add(this.picDiamond1);
             this.Controls.Add(this.picSpike1);
@@ -586,6 +599,7 @@
         private System.Windows.Forms.PictureBox picDiamond1;
         private System.Windows.Forms.Label lblScore;
         private System.Windows.Forms.Timer tmrGameTimer;
+        private System.Windows.Forms.Label lblLives;
     }
 }
 

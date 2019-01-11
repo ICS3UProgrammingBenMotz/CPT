@@ -85,9 +85,9 @@
             this.lblCash.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCash.Location = new System.Drawing.Point(182, 213);
             this.lblCash.Name = "lblCash";
-            this.lblCash.Size = new System.Drawing.Size(267, 25);
+            this.lblCash.Size = new System.Drawing.Size(390, 25);
             this.lblCash.TabIndex = 3;
-            this.lblCash.Text = "Collect these to get points!";
+            this.lblCash.Text = "Collect these to upgrade your character\r\n";
             // 
             // picSpikes
             // 
@@ -163,9 +163,9 @@
             this.lblPowerUps.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPowerUps.Location = new System.Drawing.Point(182, 156);
             this.lblPowerUps.Name = "lblPowerUps";
-            this.lblPowerUps.Size = new System.Drawing.Size(378, 25);
+            this.lblPowerUps.Size = new System.Drawing.Size(391, 25);
             this.lblPowerUps.TabIndex = 10;
-            this.lblPowerUps.Text = "Collect the diamonds to get power ups";
+            this.lblPowerUps.Text = "Collect the diamonds to get extra points";
             // 
             // frmHelp
             // 
@@ -173,7 +173,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CPTGameV._1_BenM_.Properties.Resources.MenuBackground1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(630, 424);
+            this.ClientSize = new System.Drawing.Size(630, 463);
             this.Controls.Add(this.lblPowerUps);
             this.Controls.Add(this.picDiamond);
             this.Controls.Add(this.btnGoHome);

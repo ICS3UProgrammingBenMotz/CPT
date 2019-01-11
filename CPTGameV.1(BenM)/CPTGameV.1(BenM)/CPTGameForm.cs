@@ -50,9 +50,12 @@ namespace CPTGameV._1_BenM_
 
         int randNumb;
 
+        //Variable for lives
+        int lives = 1;
+
         Random randNumbGen = new Random();
 
-
+        Image playerImage;
 
         public int GenerateNumb()
         {
@@ -68,6 +71,8 @@ namespace CPTGameV._1_BenM_
             InitializeComponent();
 
             picPlayer.Image = picUserChoice;
+
+            playerImage = picUserChoice;
 
             L1Music.URL = "Chcken.mp3";
 
@@ -196,11 +201,34 @@ namespace CPTGameV._1_BenM_
                 {
                     if (picPlayer.Bounds.IntersectsWith(x.Bounds))
                     {
-                        tmrGameTimer.Stop();
-                        picPlayer.Hide();
-                        MessageBox.Show("You Died!");
-                        L1Music.controls.stop();
-                        
+                        if (lives == 1)
+                        {
+                            //stops tmr
+                            tmrGameTimer.Stop();
+
+                            //hides player
+                            picPlayer.Hide();
+
+                            //var for dead screen
+                            var deadScreen = new frmDeadScreen(score, playerImage);
+
+                            //shows dead screen
+                            deadScreen.Show();                           
+
+                            L1Music.controls.stop();
+
+                            this.Hide();
+
+                            //makes lives = 0
+                            lives--;
+                            lblLives.Text = "Lives = " + lives;
+                        }
+                        else
+                        {
+                            //lets player continue to play
+                            lives--;
+                            lblLives.Text = "Lives = " + lives;
+                        }
                     }
                 }
                 //if player pics up diamond
@@ -215,22 +243,20 @@ namespace CPTGameV._1_BenM_
                         if (randNumb==1)
                         {
                             score = score + 100;
+
+                            lblScore.Text = "Score = " + score;
                         }
                         else if (randNumb==2)
                         {
-                            jumpSpeed = 20;
+                            score = score + 5;
 
-                            Thread.Sleep(7500);
-
-                            jumpSpeed = 10;
+                            lblScore.Text = "Score = " + score;
                         }
                         else
                         {
-                            playSpeed = 20;
+                            score = score + 20;
 
-                            Thread.Sleep(5000);
-
-                            playSpeed = 10;
+                            lblScore.Text = "Score = " + score;
                         }
                     }
                 }
@@ -244,7 +270,13 @@ namespace CPTGameV._1_BenM_
 
                 tmrGameTimer.Stop();
 
-                MessageBox.Show("You completed the level!");
+                var UpgradeForm = new frmUpgrade (playerImage, playSpeed, jumpSpeed, lives, score);
+
+                UpgradeForm.Show();
+
+                this.Hide();
+
+                L1Music.controls.stop();
             }
 
            //when the player gets the key
@@ -257,7 +289,20 @@ namespace CPTGameV._1_BenM_
            if (picPlayer.Top +picPlayer.Height>this.ClientSize.Height +60)
             {
                 tmrGameTimer.Stop();
-                MessageBox.Show("You Died!");
+
+                //var for dead screen
+                var deadScreen = new frmDeadScreen(score, playerImage);
+
+                //shows dead screen
+                deadScreen.Show();
+
+                L1Music.controls.stop();
+
+                this.Hide();
+
+                lives = 0;
+
+                lblLives.Text = "Lives = " + lives;
             }   
            
 

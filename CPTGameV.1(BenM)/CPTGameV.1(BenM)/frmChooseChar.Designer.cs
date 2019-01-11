@@ -97,6 +97,7 @@
             this.Controls.Add(this.picMario);
             this.Controls.Add(this.picComandoGuy);
             this.Name = "frmChooseChar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Choose your character";
             this.Load += new System.EventHandler(this.frmChooseChar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picComandoGuy)).EndInit();
