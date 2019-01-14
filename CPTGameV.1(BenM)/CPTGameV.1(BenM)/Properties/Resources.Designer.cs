@@ -123,6 +123,16 @@ namespace CPTGameV._1_BenM_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap coinLVL2 {
+            get {
+                object obj = ResourceManager.GetObject("coinLVL2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap DeadBackground {
             get {
                 object obj = ResourceManager.GetObject("DeadBackground", resourceCulture);
@@ -363,6 +373,26 @@ namespace CPTGameV._1_BenM_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap portal {
+            get {
+                object obj = ResourceManager.GetObject("portal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap portalStone {
+            get {
+                object obj = ResourceManager.GetObject("portalStone", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap redo {
             get {
                 object obj = ResourceManager.GetObject("redo", resourceCulture);
@@ -436,6 +466,16 @@ namespace CPTGameV._1_BenM_.Properties {
         internal static System.Drawing.Bitmap spikes_png_1 {
             get {
                 object obj = ResourceManager.GetObject("spikes-png-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap stonePlatform {
+            get {
+                object obj = ResourceManager.GetObject("stonePlatform", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

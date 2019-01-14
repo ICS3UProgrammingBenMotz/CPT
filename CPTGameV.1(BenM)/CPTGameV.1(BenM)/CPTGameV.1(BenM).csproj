@@ -314,5 +314,17 @@
   <ItemGroup>
     <None Include="Resources\redo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stonePlatform.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\portal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\portalStone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coinLVL2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

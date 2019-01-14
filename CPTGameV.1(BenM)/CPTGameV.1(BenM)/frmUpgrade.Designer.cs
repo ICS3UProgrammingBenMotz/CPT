@@ -197,6 +197,7 @@
             this.picNextLevel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picNextLevel.TabIndex = 12;
             this.picNextLevel.TabStop = false;
+            this.picNextLevel.Click += new System.EventHandler(this.picNextLevel_Click);
             // 
             // lblClickArrow
             // 

@@ -141,5 +141,12 @@ namespace CPTGameV._1_BenM_
         {
             lblUpgradePoints.Text = "Upgrade Points : " + upgradeScore;
         }
+
+        private void picNextLevel_Click(object sender, EventArgs e)
+        {
+            var lvlTwo = new frmLvlTwo(upgradeLives, livesCost, upgradePlaySpeed, speedCost, SpeedLvl, upgradeJumpSpeed, jumpCost, JumpLvl,upgradeScore, upgradePicPlayer);
+
+            lvlTwo.Show();
+        }
     }
 }
