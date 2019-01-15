@@ -128,6 +128,7 @@
             this.mniExit.Name = "mniExit";
             this.mniExit.Size = new System.Drawing.Size(53, 20);
             this.mniExit.Text = "Exit";
+            this.mniExit.Click += new System.EventHandler(this.mniExit_Click);
             // 
             // mniRetry
             // 
@@ -135,6 +136,7 @@
             this.mniRetry.Name = "mniRetry";
             this.mniRetry.Size = new System.Drawing.Size(62, 20);
             this.mniRetry.Text = "Retry";
+            this.mniRetry.Click += new System.EventHandler(this.mniRetry_Click);
             // 
             // frmDeadScreen
             // 

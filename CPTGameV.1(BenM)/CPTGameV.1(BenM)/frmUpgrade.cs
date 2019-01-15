@@ -23,17 +23,17 @@ namespace CPTGameV._1_BenM_
 
         Image upgradePicPlayer;
 
-        int SpeedLvl=1;
+        int SpeedLvl;
 
-        int JumpLvl=1;
+        int JumpLvl;
 
-        int jumpCost = 2;
+        int jumpCost;
 
-        int speedCost = 2;
+        int speedCost;
 
-        int livesCost = 4;
+        int livesCost;
 
-        public frmUpgrade(Image picPlayer, int playSpeed, int jumpSpeed, int lives, int score)
+        public frmUpgrade(Image picPlayer, int playSpeed, int jumpSpeed, int lives, int score, int livesCost1, int SpeedLvl1, int JumpLvl1, int jumpCost1, int speedCost1)
         {
             InitializeComponent();
 
@@ -46,6 +46,17 @@ namespace CPTGameV._1_BenM_
             upgradePicPlayer = picPlayer;
 
             upgradeScore = score;
+
+           SpeedLvl = SpeedLvl1;
+
+            JumpLvl = JumpLvl1;
+
+            jumpCost = jumpCost1;
+
+            speedCost = speedCost1;
+
+           livesCost = livesCost1;
+
         }
 
         private void lblSpeedLvl_Click(object sender, EventArgs e)
@@ -140,6 +151,7 @@ namespace CPTGameV._1_BenM_
         private void frmUpgrade_Load(object sender, EventArgs e)
         {
             lblUpgradePoints.Text = "Upgrade Points : " + upgradeScore;
+
         }
 
         private void picNextLevel_Click(object sender, EventArgs e)
@@ -147,6 +159,13 @@ namespace CPTGameV._1_BenM_
             var lvlTwo = new frmLvlTwo(upgradeLives, livesCost, upgradePlaySpeed, speedCost, SpeedLvl, upgradeJumpSpeed, jumpCost, JumpLvl,upgradeScore, upgradePicPlayer);
 
             lvlTwo.Show();
+
+            this.Close();
+        }
+
+        private void picExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

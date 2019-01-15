@@ -58,5 +58,19 @@ namespace CPTGameV._1_BenM_
             //plays music
             musicPlay.controls.play();
         }
+
+        private void picExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void lblGameName_Click(object sender, EventArgs e)
+        {
+            var easterEgg = new frmEasterEgg();
+
+            easterEgg.Show();
+
+            this.Close();
+        }
     }
 }

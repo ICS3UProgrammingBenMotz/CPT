@@ -79,7 +79,7 @@ namespace CPTGameV._1_BenM_
 
             CaChing.URL = "CaChing.mp3";
 
-            L2Music.URL = "lvl2Music";
+            L2Music.URL = "lvl2Music.mp3";
 
 
             //updates player image
@@ -101,12 +101,15 @@ namespace CPTGameV._1_BenM_
 
             //for score
             score = upgradeScore;
+
+            //sets picture box to chosen pic
+            picPlayer.Image = playerImage;
         }
 
         private void frmLvlTwo_Load(object sender, EventArgs e)
         {
-            //sets picture box to chosen pic
-            picPlayer.Image = playerImage;
+            //hides portal
+            picPortal.Hide();
 
             //plays music
             L2Music.controls.play();
@@ -118,7 +121,12 @@ namespace CPTGameV._1_BenM_
 
         private void tmrLvlTimer_Tick(object sender, EventArgs e)
         {
-            //links the jump speed to player pci box
+
+        }
+
+        private void lvlTwoTimer (object sender, EventArgs e)
+        {
+            //links the jump speed to player pic box
             picPlayer.Top += jumpSpeed;
 
             //refreshs player pic box constintly
@@ -164,7 +172,7 @@ namespace CPTGameV._1_BenM_
 
 
             //moves backround
-            if (goRight && background.Left > -1280)
+            if (goRight && background.Left > -1900)
             {
                 background.Left -= backLeft;
 
@@ -173,7 +181,7 @@ namespace CPTGameV._1_BenM_
                 foreach (Control x in this.Controls)
                 {
                     if (x is PictureBox && (string)x.Tag == "platform" || x is PictureBox && (string)x.Tag == "coin" || x is PictureBox && (string)x.Tag == "door"
-                        || x is PictureBox && (string)x.Tag == "key" || x is PictureBox && (string)x.Tag == "spike" || x is PictureBox && (string)x.Tag == "diamond")
+                        || x is PictureBox && (string)x.Tag == "key" || x is PictureBox && (string)x.Tag == "fire" || x is PictureBox && (string)x.Tag == "diamond")
                     {
                         x.Left -= backLeft;
                     }
@@ -187,7 +195,7 @@ namespace CPTGameV._1_BenM_
                 foreach (Control x in this.Controls)
                 {
                     if (x is PictureBox && (string)x.Tag == "platform" || x is PictureBox && (string)x.Tag == "coin" || x is PictureBox && (string)x.Tag == "door"
-                        || x is PictureBox && (string)x.Tag == "key" || x is PictureBox && (string)x.Tag == "spike" || x is PictureBox && (string)x.Tag == "diamond")
+                        || x is PictureBox && (string)x.Tag == "key" || x is PictureBox && (string)x.Tag == "fire" || x is PictureBox && (string)x.Tag == "diamond")
                     {
                         x.Left += backLeft;
                     }
@@ -234,8 +242,8 @@ namespace CPTGameV._1_BenM_
 
 
 
-                //If the player hits a spike
-                if (x is PictureBox && (string)x.Tag == "spike")
+                //If the player hits fire
+                if (x is PictureBox && (string)x.Tag == "fire")
                 {
                     if (picPlayer.Bounds.IntersectsWith(x.Bounds))
                     {
@@ -266,6 +274,12 @@ namespace CPTGameV._1_BenM_
                             //lets player continue to play
                             lives--;
                             lblLives.Text = "Lives = " + lives;
+
+                            L2Music.controls.stop();
+
+                            var lvl2Respawn = new frmLvlTwo(lives, livesCost, playSpeed, speedCost, SpeedLvl, jumpSpeed, jumpCost, JumpLvl, score, playerImage);
+
+                            lvl2Respawn.Show();
                         }
                     }
                 }
@@ -303,6 +317,48 @@ namespace CPTGameV._1_BenM_
                     }
                 }
 
+            }
+            //If player hits the door
+            if (picPlayer.Bounds.IntersectsWith(picPortal.Bounds) && hasKey)
+            {
+                picPortal.Image = Properties.Resources.door_open;
+
+                tmrLvlTimer.Stop();
+
+                this.Hide();
+
+                L2Music.controls.stop();
+
+                var endGame = new frmYouWin(playerImage);
+
+                endGame.Show();
+            }
+
+            //when the player gets the key
+            if (picPlayer.Bounds.IntersectsWith(picPortalStone.Bounds))
+            {
+                picPortal.Show();
+                this.Controls.Remove(picPortalStone);
+                hasKey = true;
+            }
+            //when the player dies
+            if (picPlayer.Top + picPlayer.Height > this.ClientSize.Height + 60)
+            {
+                tmrLvlTimer.Stop();
+
+                //var for dead screen
+                var deadScreen = new frmDeadScreen(score, playerImage);
+
+                //shows dead screen
+                deadScreen.Show();
+
+                L2Music.controls.stop();
+
+                this.Hide();
+
+                lives = 0;
+
+                lblLives.Text = "Lives = " + lives;
             }
         }
 
@@ -380,5 +436,11 @@ namespace CPTGameV._1_BenM_
 
 
         }
+
+        private void picFire1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+

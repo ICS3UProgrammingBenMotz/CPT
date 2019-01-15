@@ -46,5 +46,17 @@ namespace CPTGameV._1_BenM_
         {
 
         }
+
+        private void mniExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();            
+       }
+
+        private void mniRetry_Click(object sender, EventArgs e)
+        {
+            var lvlOne = new frmCPTGame(playerImage);
+
+            lvlOne.Show();
+        }
     }
 }

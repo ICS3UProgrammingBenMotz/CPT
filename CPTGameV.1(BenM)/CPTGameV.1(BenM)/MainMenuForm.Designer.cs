@@ -33,18 +33,22 @@
             this.btnHelp = new System.Windows.Forms.Button();
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.splitter2 = new System.Windows.Forms.Splitter();
+            this.picExit = new System.Windows.Forms.PictureBox();
+            this.lblCreatedBy = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.picExit)).BeginInit();
             this.SuspendLayout();
             // 
             // lblGameName
             // 
             this.lblGameName.AutoSize = true;
             this.lblGameName.BackColor = System.Drawing.Color.Transparent;
-            this.lblGameName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGameName.Location = new System.Drawing.Point(226, 106);
+            this.lblGameName.Font = new System.Drawing.Font("MV Boli", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGameName.Location = new System.Drawing.Point(204, 102);
             this.lblGameName.Name = "lblGameName";
-            this.lblGameName.Size = new System.Drawing.Size(140, 25);
+            this.lblGameName.Size = new System.Drawing.Size(168, 28);
             this.lblGameName.TabIndex = 0;
-            this.lblGameName.Text = "Game Name";
+            this.lblGameName.Text = "M0N3Y RU$H";
+            this.lblGameName.Click += new System.EventHandler(this.lblGameName_Click);
             // 
             // btnPlay
             // 
@@ -84,6 +88,28 @@
             this.splitter2.TabIndex = 4;
             this.splitter2.TabStop = false;
             // 
+            // picExit
+            // 
+            this.picExit.Image = global::CPTGameV._1_BenM_.Properties.Resources.exit;
+            this.picExit.Location = new System.Drawing.Point(516, 12);
+            this.picExit.Name = "picExit";
+            this.picExit.Size = new System.Drawing.Size(69, 34);
+            this.picExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picExit.TabIndex = 5;
+            this.picExit.TabStop = false;
+            this.picExit.Click += new System.EventHandler(this.picExit_Click);
+            // 
+            // lblCreatedBy
+            // 
+            this.lblCreatedBy.AutoSize = true;
+            this.lblCreatedBy.BackColor = System.Drawing.Color.Transparent;
+            this.lblCreatedBy.Font = new System.Drawing.Font("MV Boli", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCreatedBy.Location = new System.Drawing.Point(181, 341);
+            this.lblCreatedBy.Name = "lblCreatedBy";
+            this.lblCreatedBy.Size = new System.Drawing.Size(208, 28);
+            this.lblCreatedBy.TabIndex = 6;
+            this.lblCreatedBy.Text = "Created by Ben M";
+            // 
             // frmMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -91,6 +117,8 @@
             this.BackgroundImage = global::CPTGameV._1_BenM_.Properties.Resources.MenuBackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(630, 424);
+            this.Controls.Add(this.lblCreatedBy);
+            this.Controls.Add(this.picExit);
             this.Controls.Add(this.splitter2);
             this.Controls.Add(this.splitter1);
             this.Controls.Add(this.btnHelp);
@@ -100,6 +128,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.frmMainMenu_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.picExit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -112,5 +141,7 @@
         private System.Windows.Forms.Button btnHelp;
         private System.Windows.Forms.Splitter splitter1;
         private System.Windows.Forms.Splitter splitter2;
+        private System.Windows.Forms.PictureBox picExit;
+        private System.Windows.Forms.Label lblCreatedBy;
     }
 }

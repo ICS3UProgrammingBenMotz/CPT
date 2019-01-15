@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblUpgadePlaySpeed = new System.Windows.Forms.Label();
             this.lblCostSpeed = new System.Windows.Forms.Label();
             this.lblUpgradeJump = new System.Windows.Forms.Label();
@@ -44,10 +45,13 @@
             this.lblClickArrow = new System.Windows.Forms.Label();
             this.lblClickCheck = new System.Windows.Forms.Label();
             this.lblUpgradePoints = new System.Windows.Forms.Label();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.picExit = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picUpgradeSpeed)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picUpgradeJump)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMoreLiives)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picNextLevel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picExit)).BeginInit();
             this.SuspendLayout();
             // 
             // lblUpgadePlaySpeed
@@ -232,6 +236,22 @@
             this.lblUpgradePoints.TabIndex = 15;
             this.lblUpgradePoints.Text = "Points/Score:";
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // picExit
+            // 
+            this.picExit.Image = global::CPTGameV._1_BenM_.Properties.Resources.exit;
+            this.picExit.Location = new System.Drawing.Point(522, 31);
+            this.picExit.Name = "picExit";
+            this.picExit.Size = new System.Drawing.Size(62, 43);
+            this.picExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picExit.TabIndex = 17;
+            this.picExit.TabStop = false;
+            this.picExit.Click += new System.EventHandler(this.picExit_Click);
+            // 
             // frmUpgrade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -239,6 +259,7 @@
             this.BackgroundImage = global::CPTGameV._1_BenM_.Properties.Resources.upgradeBackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(630, 463);
+            this.Controls.Add(this.picExit);
             this.Controls.Add(this.lblUpgradePoints);
             this.Controls.Add(this.lblClickCheck);
             this.Controls.Add(this.lblClickArrow);
@@ -263,6 +284,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picUpgradeJump)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMoreLiives)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picNextLevel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picExit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -286,5 +308,7 @@
         private System.Windows.Forms.Label lblClickArrow;
         private System.Windows.Forms.Label lblClickCheck;
         private System.Windows.Forms.Label lblUpgradePoints;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.PictureBox picExit;
     }
 }

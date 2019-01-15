@@ -38,3 +38,7 @@ N:\StuShare\Semester 1 - Fall 2018\ICS3U Programming\Motz, Benjamin (s244734)\CP
 N:\StuShare\Semester 1 - Fall 2018\ICS3U Programming\Motz, Benjamin (s244734)\CPT\CPTGameV.1(BenM)\CPTGameV.1(BenM)\obj\Debug\CPTGameV._1_BenM_.frmUpgrade.resources
 N:\StuShare\Semester 1 - Fall 2018\ICS3U Programming\Motz, Benjamin (s244734)\CPT\CPTGameV.1(BenM)\CPTGameV.1(BenM)\obj\Debug\CPTGameV._1_BenM_.frmDeadScreen.resources
 N:\StuShare\Semester 1 - Fall 2018\ICS3U Programming\Motz, Benjamin (s244734)\CPT\CPTGameV.1(BenM)\CPTGameV.1(BenM)\obj\Debug\CPTGameV._1_BenM_.frmLvlTwo.resources
+C:\Users\Motz\Documents\GitHub\CPT\CPTGameV.1(BenM)\CPTGameV.1(BenM)\obj\Debug\CPTGameV._1_BenM_.frmDeadScreen.resources
+C:\Users\Motz\Documents\GitHub\CPT\CPTGameV.1(BenM)\CPTGameV.1(BenM)\obj\Debug\CPTGameV._1_BenM_.frmLvlTwo.resources
+C:\Users\Motz\Documents\GitHub\CPT\CPTGameV.1(BenM)\CPTGameV.1(BenM)\obj\Debug\CPTGameV._1_BenM_.frmUpgrade.resources
+C:\Users\Motz\Documents\GitHub\CPT\CPTGameV.1(BenM)\CPTGameV.1(BenM)\obj\Debug\CPTGameV._1_BenM_.frmEasterEgg.resources

@@ -53,6 +53,17 @@ namespace CPTGameV._1_BenM_
         //Variable for lives
         int lives = 1;
 
+        //stuff being passed to upgrade form
+        int SpeedLvl = 1;
+
+        int JumpLvl = 1;
+
+        int jumpCost = 2;
+
+        int speedCost = 2;
+
+        int livesCost = 4;
+
         Random randNumbGen = new Random();
 
         Image playerImage;
@@ -270,7 +281,7 @@ namespace CPTGameV._1_BenM_
 
                 tmrGameTimer.Stop();
 
-                var UpgradeForm = new frmUpgrade (playerImage, playSpeed, jumpSpeed, lives, score);
+                var UpgradeForm = new frmUpgrade (playerImage, playSpeed, jumpSpeed, lives, score, livesCost, SpeedLvl, JumpLvl, jumpCost, speedCost);
 
                 UpgradeForm.Show();
 

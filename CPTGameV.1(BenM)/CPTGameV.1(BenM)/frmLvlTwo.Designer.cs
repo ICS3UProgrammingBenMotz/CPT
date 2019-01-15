@@ -57,6 +57,10 @@
             this.lblLives = new System.Windows.Forms.Label();
             this.lblScore = new System.Windows.Forms.Label();
             this.tmrLvlTimer = new System.Windows.Forms.Timer(this.components);
+            this.picFire1 = new System.Windows.Forms.PictureBox();
+            this.picfire2 = new System.Windows.Forms.PictureBox();
+            this.picfire3 = new System.Windows.Forms.PictureBox();
+            this.picFire4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.background)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPlat1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPlat4)).BeginInit();
@@ -82,6 +86,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.picCoin2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCoin8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCoin7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFire1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picfire2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picfire3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFire4)).BeginInit();
             this.SuspendLayout();
             // 
             // background
@@ -91,7 +99,7 @@
             this.background.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.background.Location = new System.Drawing.Point(-46, -176);
             this.background.Name = "background";
-            this.background.Size = new System.Drawing.Size(2004, 643);
+            this.background.Size = new System.Drawing.Size(2000, 643);
             this.background.TabIndex = 0;
             this.background.TabStop = false;
             // 
@@ -245,7 +253,7 @@
             this.picPlayer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picPlayer.ErrorImage = null;
             this.picPlayer.Image = global::CPTGameV._1_BenM_.Properties.Resources.Small_Mario_NSMBU;
-            this.picPlayer.Location = new System.Drawing.Point(317, 360);
+            this.picPlayer.Location = new System.Drawing.Point(353, 365);
             this.picPlayer.Name = "picPlayer";
             this.picPlayer.Size = new System.Drawing.Size(57, 75);
             this.picPlayer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -284,7 +292,7 @@
             this.picPortalStone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picPortalStone.ErrorImage = null;
             this.picPortalStone.Image = global::CPTGameV._1_BenM_.Properties.Resources.portalStone;
-            this.picPortalStone.Location = new System.Drawing.Point(1452, 41);
+            this.picPortalStone.Location = new System.Drawing.Point(1786, 271);
             this.picPortalStone.Name = "picPortalStone";
             this.picPortalStone.Size = new System.Drawing.Size(49, 37);
             this.picPortalStone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -296,7 +304,7 @@
             // 
             this.picCoin1.BackColor = System.Drawing.Color.Transparent;
             this.picCoin1.Image = global::CPTGameV._1_BenM_.Properties.Resources.coinLVL2;
-            this.picCoin1.Location = new System.Drawing.Point(94, 398);
+            this.picCoin1.Location = new System.Drawing.Point(107, 401);
             this.picCoin1.Name = "picCoin1";
             this.picCoin1.Size = new System.Drawing.Size(44, 37);
             this.picCoin1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -414,7 +422,64 @@
             // 
             this.tmrLvlTimer.Enabled = true;
             this.tmrLvlTimer.Interval = 1;
-            this.tmrLvlTimer.Tick += new System.EventHandler(this.tmrLvlTimer_Tick);
+            this.tmrLvlTimer.Tick += new System.EventHandler(this.lvlTwoTimer);
+            // 
+            // picFire1
+            // 
+            this.picFire1.BackColor = System.Drawing.Color.Transparent;
+            this.picFire1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picFire1.ErrorImage = null;
+            this.picFire1.Image = global::CPTGameV._1_BenM_.Properties.Resources.fire;
+            this.picFire1.Location = new System.Drawing.Point(179, 405);
+            this.picFire1.Name = "picFire1";
+            this.picFire1.Size = new System.Drawing.Size(92, 37);
+            this.picFire1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picFire1.TabIndex = 49;
+            this.picFire1.TabStop = false;
+            this.picFire1.Tag = "fire";
+            this.picFire1.Click += new System.EventHandler(this.picFire1_Click);
+            // 
+            // picfire2
+            // 
+            this.picfire2.BackColor = System.Drawing.Color.Transparent;
+            this.picfire2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picfire2.ErrorImage = null;
+            this.picfire2.Image = global::CPTGameV._1_BenM_.Properties.Resources.fire;
+            this.picfire2.Location = new System.Drawing.Point(252, 47);
+            this.picfire2.Name = "picfire2";
+            this.picfire2.Size = new System.Drawing.Size(92, 37);
+            this.picfire2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picfire2.TabIndex = 50;
+            this.picfire2.TabStop = false;
+            this.picfire2.Tag = "fire";
+            // 
+            // picfire3
+            // 
+            this.picfire3.BackColor = System.Drawing.Color.Transparent;
+            this.picfire3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picfire3.ErrorImage = null;
+            this.picfire3.Image = global::CPTGameV._1_BenM_.Properties.Resources.fire;
+            this.picfire3.Location = new System.Drawing.Point(653, 271);
+            this.picfire3.Name = "picfire3";
+            this.picfire3.Size = new System.Drawing.Size(92, 37);
+            this.picfire3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picfire3.TabIndex = 51;
+            this.picfire3.TabStop = false;
+            this.picfire3.Tag = "fire";
+            // 
+            // picFire4
+            // 
+            this.picFire4.BackColor = System.Drawing.Color.Transparent;
+            this.picFire4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picFire4.ErrorImage = null;
+            this.picFire4.Image = global::CPTGameV._1_BenM_.Properties.Resources.fire;
+            this.picFire4.Location = new System.Drawing.Point(1469, 145);
+            this.picFire4.Name = "picFire4";
+            this.picFire4.Size = new System.Drawing.Size(92, 37);
+            this.picFire4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picFire4.TabIndex = 52;
+            this.picFire4.TabStop = false;
+            this.picFire4.Tag = "fire";
             // 
             // frmLvlTwo
             // 
@@ -423,6 +488,10 @@
             this.BackgroundImage = global::CPTGameV._1_BenM_.Properties.Resources.lvl2Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(630, 463);
+            this.Controls.Add(this.picFire4);
+            this.Controls.Add(this.picfire3);
+            this.Controls.Add(this.picfire2);
+            this.Controls.Add(this.picFire1);
             this.Controls.Add(this.lblScore);
             this.Controls.Add(this.lblLives);
             this.Controls.Add(this.picCoin7);
@@ -451,7 +520,10 @@
             this.Controls.Add(this.picPlat1);
             this.Controls.Add(this.background);
             this.Name = "frmLvlTwo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.frmLvlTwo_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyIsDown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.keyIsUp);
             ((System.ComponentModel.ISupportInitialize)(this.background)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPlat1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPlat4)).EndInit();
@@ -477,6 +549,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.picCoin2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCoin8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCoin7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFire1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picfire2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picfire3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFire4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -512,5 +588,9 @@
         private System.Windows.Forms.Label lblLives;
         private System.Windows.Forms.Label lblScore;
         private System.Windows.Forms.Timer tmrLvlTimer;
+        private System.Windows.Forms.PictureBox picFire1;
+        private System.Windows.Forms.PictureBox picfire2;
+        private System.Windows.Forms.PictureBox picfire3;
+        private System.Windows.Forms.PictureBox picFire4;
     }
 }
