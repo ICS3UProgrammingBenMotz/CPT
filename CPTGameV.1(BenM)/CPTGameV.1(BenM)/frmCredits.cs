@@ -22,5 +22,10 @@ namespace CPTGameV._1_BenM_
             //leaves application
             Application.Exit();
         }
+
+        private void mniExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

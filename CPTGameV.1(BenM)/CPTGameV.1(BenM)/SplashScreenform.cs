@@ -37,7 +37,7 @@ namespace CPTGameV._1_BenM_
             do
             {
                 this.prbSecs.Value = progressbarvalue;
-                progressbarvalue = progressbarvalue + 2;
+                progressbarvalue = progressbarvalue + 1;
                 this.Refresh();
             } while (progressbarvalue <= MAX_PROGRESS_VALUE);
         }

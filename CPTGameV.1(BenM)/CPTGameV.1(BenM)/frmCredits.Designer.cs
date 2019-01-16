@@ -34,8 +34,11 @@
             this.picDancin2 = new System.Windows.Forms.PictureBox();
             this.lblThnaks = new System.Windows.Forms.Label();
             this.tmr5Secs = new System.Windows.Forms.Timer(this.components);
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.mniExit = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.picDancin1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDancin2)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblCreated
@@ -80,15 +83,35 @@
             this.lblThnaks.ForeColor = System.Drawing.Color.Black;
             this.lblThnaks.Location = new System.Drawing.Point(186, 101);
             this.lblThnaks.Name = "lblThnaks";
-            this.lblThnaks.Size = new System.Drawing.Size(223, 25);
+            this.lblThnaks.Size = new System.Drawing.Size(216, 25);
             this.lblThnaks.TabIndex = 3;
-            this.lblThnaks.Text = "Thanks For Playing!";
+            this.lblThnaks.Text = "Thanks for Playing!";
             // 
             // tmr5Secs
             // 
             this.tmr5Secs.Enabled = true;
             this.tmr5Secs.Interval = 5000;
             this.tmr5Secs.Tick += new System.EventHandler(this.tmr5Secs_Tick);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.BackColor = System.Drawing.Color.Transparent;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mniExit});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(630, 24);
+            this.menuStrip1.TabIndex = 4;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // mniExit
+            // 
+            this.mniExit.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mniExit.Image = global::CPTGameV._1_BenM_.Properties.Resources.exit;
+            this.mniExit.Name = "mniExit";
+            this.mniExit.Size = new System.Drawing.Size(54, 20);
+            this.mniExit.Text = "Exit";
+            this.mniExit.Click += new System.EventHandler(this.mniExit_Click);
             // 
             // frmCredits
             // 
@@ -101,9 +124,13 @@
             this.Controls.Add(this.picDancin2);
             this.Controls.Add(this.picDancin1);
             this.Controls.Add(this.lblCreated);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmCredits";
             ((System.ComponentModel.ISupportInitialize)(this.picDancin1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDancin2)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -116,5 +143,7 @@
         private System.Windows.Forms.PictureBox picDancin2;
         private System.Windows.Forms.Label lblThnaks;
         private System.Windows.Forms.Timer tmr5Secs;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem mniExit;
     }
 }

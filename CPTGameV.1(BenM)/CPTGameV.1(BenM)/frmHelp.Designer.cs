@@ -52,9 +52,9 @@
             this.lblArrowKeys.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblArrowKeys.Location = new System.Drawing.Point(72, 39);
             this.lblArrowKeys.Name = "lblArrowKeys";
-            this.lblArrowKeys.Size = new System.Drawing.Size(354, 25);
+            this.lblArrowKeys.Size = new System.Drawing.Size(343, 25);
             this.lblArrowKeys.TabIndex = 0;
-            this.lblArrowKeys.Text = "Arrow Keys    -    Moves you around";
+            this.lblArrowKeys.Text = "Arrow Keys    -    Move you around";
             // 
             // label1
             // 

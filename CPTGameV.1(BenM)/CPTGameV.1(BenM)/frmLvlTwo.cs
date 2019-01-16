@@ -13,7 +13,33 @@ namespace CPTGameV._1_BenM_
 {
     public partial class frmLvlTwo : Form
     {
-        List<PictureBox> listOCoins = new List<PictureBox>();
+        //procedure for dying
+        private void YouDied()
+        {
+            //stops tmr
+            tmrLvlTimer.Stop();
+
+            //hides player
+            picPlayer.Hide();
+
+            //var for dead screen
+            var deadScreen = new frmDeadScreen(score, playerImage);
+
+            //shows dead screen
+            deadScreen.Show();
+
+            L2Music.controls.stop();
+
+            this.Hide();
+
+            //makes lives = 0
+            lives--;
+            lblLives.Text = "Lives = " + lives;
+        }
+        
+
+
+        List<string> listOCoins = new List<string>();
 
         WindowsMediaPlayer CaChing = new WindowsMediaPlayer();
 
@@ -74,6 +100,15 @@ namespace CPTGameV._1_BenM_
 
         int livesCost;
 
+        string coin1;
+        string coin2;
+        string coin3;
+        string coin4;
+        string coin5;
+        string coin6;
+        string coin7;
+        string coin8;
+
 
         public frmLvlTwo(int upgradeLives, int uplivesCost, int upgradePlaySpeed, int upSpeedCost, int upSpeedLvl, int upgradeJumpSpeed, int upJumpCost, int upJumpLvl, int upgradeScore, Image upgradePicPlayer)
         {
@@ -120,16 +155,15 @@ namespace CPTGameV._1_BenM_
 
             lblScore.Text = "Score = " + score;
 
-            //adds coins to list
-            listOCoins.Add(picCoin1);
-            listOCoins.Add(picCoin2);
-            listOCoins.Add(picCoin3);
-            listOCoins.Add(picCoin4);
-            listOCoins.Add(picCoin5);
-            listOCoins.Add(picCoin6);
-            listOCoins.Add(picCoin7);
-            listOCoins.Add(picCoin8);
-
+            //adds all bools to list
+            listOCoins.Add(coin1);
+            listOCoins.Add(coin2);
+            listOCoins.Add(coin3);
+            listOCoins.Add(coin4);
+            listOCoins.Add(coin5);
+            listOCoins.Add(coin6);
+            listOCoins.Add(coin7);
+            listOCoins.Add(coin8);
 
         }
 
@@ -237,22 +271,7 @@ namespace CPTGameV._1_BenM_
                 {
                     //if player collides with the coin
                     if (picPlayer.Bounds.IntersectsWith(x.Bounds))
-                    {
-                        int coinFinder = 1;
-
-                        PictureBox coin = "picCoin" + coinFinder;
-
-                        //removes coin
-                        this.Controls.Remove(x);
-
-                        while (coinFinder <= 8)
-                        {
-                            if (x.Name == "picCoin" + coinFinder)
-                            {
-                                listOCoins.Remove(coin);
-                            }
-                        }
-
+                    { 
 
                         //increments score
                         score++;
@@ -263,6 +282,42 @@ namespace CPTGameV._1_BenM_
                         //plays CaChing sound effect when coins are picked up
                         CaChing.controls.play();
 
+                        this.Controls.Remove(x);
+
+                        //removes coins from list when picked up
+                        if (x == picCoin1)
+                        {
+                            listOCoins.Remove(coin1);
+                        }
+                        else if (x ==picCoin2)
+                        {
+                            listOCoins.Remove(coin2);
+                        }
+                        else if (x == picCoin3)
+                        {
+                            listOCoins.Remove(coin3);
+                        }
+                        else if (x == picCoin4)
+                        {
+                            listOCoins.Remove(coin4);
+                        }
+                        else if (x == picCoin5)
+                        {
+                            listOCoins.Remove(coin5);
+                        }
+                        else if (x == picCoin6)
+                        {
+                            listOCoins.Remove(coin6);
+                        }
+                        else if (x == picCoin7)
+                        {
+                            listOCoins.Remove(coin7);
+                        }
+                        else if (x == picCoin8)
+                        {
+                            listOCoins.Remove(coin8);
+                        }
+                        
                     }
                 }
 
@@ -276,25 +331,7 @@ namespace CPTGameV._1_BenM_
                     {
                         if (lives == 1)
                         {
-                            //stops tmr
-                            tmrLvlTimer.Stop();
-
-                            //hides player
-                            picPlayer.Hide();
-
-                            //var for dead screen
-                            var deadScreen = new frmDeadScreen(score, playerImage);
-
-                            //shows dead screen
-                            deadScreen.Show();
-
-                            L2Music.controls.stop();
-
-                            this.Hide();
-
-                            //makes lives = 0
-                            lives--;
-                            lblLives.Text = "Lives = " + lives;
+                            YouDied();
                         }
                         else
                         {
@@ -375,21 +412,7 @@ namespace CPTGameV._1_BenM_
             //when the player dies
             if (picPlayer.Top + picPlayer.Height > this.ClientSize.Height + 60)
             {
-                tmrLvlTimer.Stop();
-
-                //var for dead screen
-                var deadScreen = new frmDeadScreen(score, playerImage);
-
-                //shows dead screen
-                deadScreen.Show();
-
-                L2Music.controls.stop();
-
-                this.Hide();
-
-                lives = 0;
-
-                lblLives.Text = "Lives = " + lives;
+                YouDied();
             }
         }
 

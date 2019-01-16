@@ -33,6 +33,8 @@ namespace CPTGameV._1_BenM_
 
         int livesCost;
 
+
+
         public frmUpgrade(Image picPlayer, int playSpeed, int jumpSpeed, int lives, int score, int livesCost1, int SpeedLvl1, int JumpLvl1, int jumpCost1, int speedCost1)
         {
             InitializeComponent();
@@ -127,7 +129,7 @@ namespace CPTGameV._1_BenM_
 
                 JumpLvl++;
 
-                lblJumpLvl.Text = "Speed: " + JumpLvl;
+                lblJumpLvl.Text = "Jump: " + JumpLvl;
 
                 upgradeScore = upgradeScore - jumpCost;
 

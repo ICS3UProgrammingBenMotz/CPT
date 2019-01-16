@@ -32,10 +32,12 @@
             this.picBigChungus = new System.Windows.Forms.PictureBox();
             this.picBigChungus2 = new System.Windows.Forms.PictureBox();
             this.picContinue = new System.Windows.Forms.PictureBox();
+            this.picYouWin = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picPlayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBigChungus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBigChungus2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picContinue)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picYouWin)).BeginInit();
             this.SuspendLayout();
             // 
             // picPlayer
@@ -83,6 +85,17 @@
             this.picContinue.TabStop = false;
             this.picContinue.Click += new System.EventHandler(this.picContinue_Click);
             // 
+            // picYouWin
+            // 
+            this.picYouWin.BackColor = System.Drawing.Color.Transparent;
+            this.picYouWin.Image = global::CPTGameV._1_BenM_.Properties.Resources.Youwin;
+            this.picYouWin.Location = new System.Drawing.Point(199, 98);
+            this.picYouWin.Name = "picYouWin";
+            this.picYouWin.Size = new System.Drawing.Size(235, 95);
+            this.picYouWin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picYouWin.TabIndex = 8;
+            this.picYouWin.TabStop = false;
+            // 
             // frmYouWin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -90,6 +103,7 @@
             this.BackgroundImage = global::CPTGameV._1_BenM_.Properties.Resources.mansion;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(630, 463);
+            this.Controls.Add(this.picYouWin);
             this.Controls.Add(this.picContinue);
             this.Controls.Add(this.picBigChungus2);
             this.Controls.Add(this.picBigChungus);
@@ -102,6 +116,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picBigChungus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBigChungus2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picContinue)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picYouWin)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -112,5 +127,6 @@
         private System.Windows.Forms.PictureBox picBigChungus;
         private System.Windows.Forms.PictureBox picBigChungus2;
         private System.Windows.Forms.PictureBox picContinue;
+        private System.Windows.Forms.PictureBox picYouWin;
     }
 }

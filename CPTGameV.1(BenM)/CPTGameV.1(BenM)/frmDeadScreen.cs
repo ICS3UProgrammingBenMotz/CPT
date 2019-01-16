@@ -57,6 +57,8 @@ namespace CPTGameV._1_BenM_
             var lvlOne = new frmCPTGame(playerImage);
 
             lvlOne.Show();
+
+            this.Hide();
         }
     }
 }
