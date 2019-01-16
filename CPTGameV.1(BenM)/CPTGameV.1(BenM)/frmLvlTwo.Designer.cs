@@ -102,6 +102,7 @@
             this.background.Size = new System.Drawing.Size(2000, 643);
             this.background.TabIndex = 0;
             this.background.TabStop = false;
+            this.background.Click += new System.EventHandler(this.background_Click);
             // 
             // picPlat1
             // 
@@ -253,7 +254,7 @@
             this.picPlayer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picPlayer.ErrorImage = null;
             this.picPlayer.Image = global::CPTGameV._1_BenM_.Properties.Resources.Small_Mario_NSMBU;
-            this.picPlayer.Location = new System.Drawing.Point(353, 365);
+            this.picPlayer.Location = new System.Drawing.Point(300, 367);
             this.picPlayer.Name = "picPlayer";
             this.picPlayer.Size = new System.Drawing.Size(57, 75);
             this.picPlayer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -278,7 +279,7 @@
             this.picPortal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picPortal.ErrorImage = null;
             this.picPortal.Image = global::CPTGameV._1_BenM_.Properties.Resources.portal;
-            this.picPortal.Location = new System.Drawing.Point(1081, 376);
+            this.picPortal.Location = new System.Drawing.Point(1081, 369);
             this.picPortal.Name = "picPortal";
             this.picPortal.Size = new System.Drawing.Size(89, 75);
             this.picPortal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -473,7 +474,7 @@
             this.picFire4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picFire4.ErrorImage = null;
             this.picFire4.Image = global::CPTGameV._1_BenM_.Properties.Resources.fire;
-            this.picFire4.Location = new System.Drawing.Point(1469, 145);
+            this.picFire4.Location = new System.Drawing.Point(1408, 145);
             this.picFire4.Name = "picFire4";
             this.picFire4.Size = new System.Drawing.Size(92, 37);
             this.picFire4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

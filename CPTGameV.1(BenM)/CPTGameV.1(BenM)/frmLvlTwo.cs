@@ -13,6 +13,8 @@ namespace CPTGameV._1_BenM_
 {
     public partial class frmLvlTwo : Form
     {
+        List<PictureBox> listOCoins = new List<PictureBox>();
+
         WindowsMediaPlayer CaChing = new WindowsMediaPlayer();
 
         WindowsMediaPlayer L2Music = new WindowsMediaPlayer();
@@ -117,6 +119,18 @@ namespace CPTGameV._1_BenM_
             lblLives.Text = "Lives = " + lives;
 
             lblScore.Text = "Score = " + score;
+
+            //adds coins to list
+            listOCoins.Add(picCoin1);
+            listOCoins.Add(picCoin2);
+            listOCoins.Add(picCoin3);
+            listOCoins.Add(picCoin4);
+            listOCoins.Add(picCoin5);
+            listOCoins.Add(picCoin6);
+            listOCoins.Add(picCoin7);
+            listOCoins.Add(picCoin8);
+
+
         }
 
         private void tmrLvlTimer_Tick(object sender, EventArgs e)
@@ -224,8 +238,21 @@ namespace CPTGameV._1_BenM_
                     //if player collides with the coin
                     if (picPlayer.Bounds.IntersectsWith(x.Bounds))
                     {
+                        int coinFinder = 1;
+
+                        PictureBox coin = "picCoin" + coinFinder;
+
                         //removes coin
                         this.Controls.Remove(x);
+
+                        while (coinFinder <= 8)
+                        {
+                            if (x.Name == "picCoin" + coinFinder)
+                            {
+                                listOCoins.Remove(coin);
+                            }
+                        }
+
 
                         //increments score
                         score++;
@@ -271,6 +298,10 @@ namespace CPTGameV._1_BenM_
                         }
                         else
                         {
+                            tmrLvlTimer.Stop();
+
+                            this.Hide();
+
                             //lets player continue to play
                             lives--;
                             lblLives.Text = "Lives = " + lives;
@@ -438,6 +469,11 @@ namespace CPTGameV._1_BenM_
         }
 
         private void picFire1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void background_Click(object sender, EventArgs e)
         {
 
         }

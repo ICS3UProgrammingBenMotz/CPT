@@ -32,6 +32,7 @@
             this.picBenMotz = new System.Windows.Forms.PictureBox();
             this.lblBenMotzGamingStudios = new System.Windows.Forms.Label();
             this.tmrWait = new System.Windows.Forms.Timer(this.components);
+            this.prbSecs = new System.Windows.Forms.ProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.picBenMotz)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,12 +66,20 @@
             this.tmrWait.Interval = 2500;
             this.tmrWait.Tick += new System.EventHandler(this.tmrWait_Tick);
             // 
+            // prbSecs
+            // 
+            this.prbSecs.Location = new System.Drawing.Point(109, 403);
+            this.prbSecs.Name = "prbSecs";
+            this.prbSecs.Size = new System.Drawing.Size(406, 29);
+            this.prbSecs.TabIndex = 2;
+            // 
             // frmSplashScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CPTGameV._1_BenM_.Properties.Resources.spashScreenBackground;
             this.ClientSize = new System.Drawing.Size(646, 463);
+            this.Controls.Add(this.prbSecs);
             this.Controls.Add(this.lblBenMotzGamingStudios);
             this.Controls.Add(this.picBenMotz);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -88,5 +97,6 @@
         private System.Windows.Forms.PictureBox picBenMotz;
         private System.Windows.Forms.Label lblBenMotzGamingStudios;
         private System.Windows.Forms.Timer tmrWait;
+        private System.Windows.Forms.ProgressBar prbSecs;
     }
 }

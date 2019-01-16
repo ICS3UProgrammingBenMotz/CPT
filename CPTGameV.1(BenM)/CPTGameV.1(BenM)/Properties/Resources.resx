@@ -139,8 +139,8 @@
   <data name="spashScreenBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\spashScreenBackground.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="upgradeBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\upgradeBackground.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mansion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mansion.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="door-open" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\door-open.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,8 +172,14 @@
   <data name="GoldKey" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GoldKey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Small_Mario_NSMBU" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Small_Mario_NSMBU.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="spikes-png-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\spikes-png-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="portalStone" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\portalStone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,6 +193,9 @@
   <data name="lvl2Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lvl2Background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="player" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="betterRedX" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\betterRedX.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -199,9 +208,6 @@
   <data name="diamond" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\diamond.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MenuBackground1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MenuBackground1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="benmotzGamingStudiosImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\benmotzGamingStudiosImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -211,29 +217,38 @@
   <data name="egyptianGuy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\egyptianGuy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="portal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\portal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="easterEgg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\easterEgg.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="spikes-png-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\spikes-png-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="upgradeBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\upgradeBackground.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="brickWall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\brickWall.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tombstone" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tombstone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bigChungus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bigChungus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="MenuBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MenuBackground.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="player" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\player.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MenuBackground1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuBackground1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cash" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Donald" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Donald.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="upgradeArrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\upgradeArrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="continue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\continue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="deadhill" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\deadhill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -253,13 +268,13 @@
   <data name="graveyard" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\graveyard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="easterEgg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\easterEgg.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="portal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\portal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="coin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\coin.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mansion" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mansion.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="dancin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dancin.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

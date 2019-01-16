@@ -29,19 +29,59 @@
         private void InitializeComponent()
         {
             this.picPlayer = new System.Windows.Forms.PictureBox();
+            this.picBigChungus = new System.Windows.Forms.PictureBox();
+            this.picBigChungus2 = new System.Windows.Forms.PictureBox();
+            this.picContinue = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picPlayer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBigChungus)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBigChungus2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picContinue)).BeginInit();
             this.SuspendLayout();
             // 
             // picPlayer
             // 
             this.picPlayer.BackColor = System.Drawing.Color.Transparent;
             this.picPlayer.Image = global::CPTGameV._1_BenM_.Properties.Resources.gladiator_5;
-            this.picPlayer.Location = new System.Drawing.Point(265, 299);
+            this.picPlayer.Location = new System.Drawing.Point(272, 220);
             this.picPlayer.Name = "picPlayer";
-            this.picPlayer.Size = new System.Drawing.Size(87, 101);
+            this.picPlayer.Size = new System.Drawing.Size(87, 95);
             this.picPlayer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picPlayer.TabIndex = 4;
             this.picPlayer.TabStop = false;
+            // 
+            // picBigChungus
+            // 
+            this.picBigChungus.BackColor = System.Drawing.Color.Transparent;
+            this.picBigChungus.Image = global::CPTGameV._1_BenM_.Properties.Resources.bigChungus;
+            this.picBigChungus.Location = new System.Drawing.Point(119, 283);
+            this.picBigChungus.Name = "picBigChungus";
+            this.picBigChungus.Size = new System.Drawing.Size(137, 157);
+            this.picBigChungus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBigChungus.TabIndex = 5;
+            this.picBigChungus.TabStop = false;
+            // 
+            // picBigChungus2
+            // 
+            this.picBigChungus2.BackColor = System.Drawing.Color.Transparent;
+            this.picBigChungus2.Image = global::CPTGameV._1_BenM_.Properties.Resources.bigChungus;
+            this.picBigChungus2.Location = new System.Drawing.Point(365, 283);
+            this.picBigChungus2.Name = "picBigChungus2";
+            this.picBigChungus2.Size = new System.Drawing.Size(134, 157);
+            this.picBigChungus2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBigChungus2.TabIndex = 6;
+            this.picBigChungus2.TabStop = false;
+            // 
+            // picContinue
+            // 
+            this.picContinue.BackColor = System.Drawing.Color.Transparent;
+            this.picContinue.Image = global::CPTGameV._1_BenM_.Properties.Resources._continue;
+            this.picContinue.Location = new System.Drawing.Point(392, 22);
+            this.picContinue.Name = "picContinue";
+            this.picContinue.Size = new System.Drawing.Size(196, 70);
+            this.picContinue.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picContinue.TabIndex = 7;
+            this.picContinue.TabStop = false;
+            this.picContinue.Click += new System.EventHandler(this.picContinue_Click);
             // 
             // frmYouWin
             // 
@@ -50,11 +90,18 @@
             this.BackgroundImage = global::CPTGameV._1_BenM_.Properties.Resources.mansion;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(630, 463);
+            this.Controls.Add(this.picContinue);
+            this.Controls.Add(this.picBigChungus2);
+            this.Controls.Add(this.picBigChungus);
             this.Controls.Add(this.picPlayer);
             this.Name = "frmYouWin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CONGRATS";
             this.Load += new System.EventHandler(this.frmYouWin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picPlayer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBigChungus)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBigChungus2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picContinue)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -62,5 +109,8 @@
         #endregion
 
         private System.Windows.Forms.PictureBox picPlayer;
+        private System.Windows.Forms.PictureBox picBigChungus;
+        private System.Windows.Forms.PictureBox picBigChungus2;
+        private System.Windows.Forms.PictureBox picContinue;
     }
 }

@@ -42,3 +42,6 @@ C:\Users\Motz\Documents\GitHub\CPT\CPTGameV.1(BenM)\CPTGameV.1(BenM)\obj\Debug\C
 C:\Users\Motz\Documents\GitHub\CPT\CPTGameV.1(BenM)\CPTGameV.1(BenM)\obj\Debug\CPTGameV._1_BenM_.frmLvlTwo.resources
 C:\Users\Motz\Documents\GitHub\CPT\CPTGameV.1(BenM)\CPTGameV.1(BenM)\obj\Debug\CPTGameV._1_BenM_.frmUpgrade.resources
 C:\Users\Motz\Documents\GitHub\CPT\CPTGameV.1(BenM)\CPTGameV.1(BenM)\obj\Debug\CPTGameV._1_BenM_.frmEasterEgg.resources
+N:\StuShare\Semester 1 - Fall 2018\ICS3U Programming\Motz, Benjamin (s244734)\CPT\CPTGameV.1(BenM)\CPTGameV.1(BenM)\obj\Debug\CPTGameV._1_BenM_.frmEasterEgg.resources
+N:\StuShare\Semester 1 - Fall 2018\ICS3U Programming\Motz, Benjamin (s244734)\CPT\CPTGameV.1(BenM)\CPTGameV.1(BenM)\obj\Debug\CPTGameV._1_BenM_.frmYouWin.resources
+N:\StuShare\Semester 1 - Fall 2018\ICS3U Programming\Motz, Benjamin (s244734)\CPT\CPTGameV.1(BenM)\CPTGameV.1(BenM)\obj\Debug\CPTGameV._1_BenM_.frmCredits.resources

@@ -14,7 +14,11 @@ namespace CPTGameV._1_BenM_
 {
     public partial class frmSplashScreen : Form
     {
-        
+        //declares constants and variable
+        const int MAX_PROGRESS_VALUE = 100;
+        int progressbarvalue = 0;
+
+           
 
         public frmSplashScreen()
         {
@@ -29,7 +33,13 @@ namespace CPTGameV._1_BenM_
 
         private void frmSplashScreen_Load(object sender, EventArgs e)
         {
-            
+            //Makes progress bar increase
+            do
+            {
+                this.prbSecs.Value = progressbarvalue;
+                progressbarvalue = progressbarvalue + 2;
+                this.Refresh();
+            } while (progressbarvalue <= MAX_PROGRESS_VALUE);
         }
 
 

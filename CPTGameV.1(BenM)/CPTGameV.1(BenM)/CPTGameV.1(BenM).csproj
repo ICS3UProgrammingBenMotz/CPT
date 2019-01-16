@@ -76,6 +76,12 @@
     <Compile Include="frmChooseChar.Designer.cs">
       <DependentUpon>frmChooseChar.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCredits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCredits.Designer.cs">
+      <DependentUpon>frmCredits.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDeadScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmChooseChar.resx">
       <DependentUpon>frmChooseChar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCredits.resx">
+      <DependentUpon>frmCredits.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDeadScreen.resx">
       <DependentUpon>frmDeadScreen.cs</DependentUpon>
@@ -352,6 +361,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\mansion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bigChungus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brickWall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Donald.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\continue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dancin.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

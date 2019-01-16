@@ -19,7 +19,7 @@ namespace CPTGameV._1_BenM_.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -63,6 +63,16 @@ namespace CPTGameV._1_BenM_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _continue {
+            get {
+                object obj = ResourceManager.GetObject("continue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap background {
             get {
                 object obj = ResourceManager.GetObject("background", resourceCulture);
@@ -86,6 +96,26 @@ namespace CPTGameV._1_BenM_.Properties {
         internal static System.Drawing.Bitmap betterRedX {
             get {
                 object obj = ResourceManager.GetObject("betterRedX", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bigChungus {
+            get {
+                object obj = ResourceManager.GetObject("bigChungus", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap brickWall {
+            get {
+                object obj = ResourceManager.GetObject("brickWall", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,6 +163,16 @@ namespace CPTGameV._1_BenM_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dancin {
+            get {
+                object obj = ResourceManager.GetObject("dancin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap DeadBackground {
             get {
                 object obj = ResourceManager.GetObject("DeadBackground", resourceCulture);
@@ -166,6 +206,16 @@ namespace CPTGameV._1_BenM_.Properties {
         internal static System.Drawing.Bitmap diamond {
             get {
                 object obj = ResourceManager.GetObject("diamond", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Donald {
+            get {
+                object obj = ResourceManager.GetObject("Donald", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
